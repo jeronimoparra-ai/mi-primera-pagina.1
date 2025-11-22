@@ -67,3 +67,5 @@ area = PI * radio * radio
 # Salida
 print(area)  # resultado: 78.53975
 
+Referencias: Chat sobre Fundamentos Y Diseños De Algoritmos: https://claude.ai/share/f0f71267-4e48-4994-8749-27ba0f7a6455
+
