@@ -5,8 +5,6 @@
 
 # Desarrollo De Software 2025-2 Grupo: PREICA2502B020026
 
-# S35 - Actividad de aprendizaje Tarea 01
-
 
 Mi primer Turtle
 
