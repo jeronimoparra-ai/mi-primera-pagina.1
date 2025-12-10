@@ -128,8 +128,9 @@ def reto5():
 #        |
 #        |
 # ...
-```
 
+
+```
 ## Mi progreso👇
 https://github.com/jeronimoparra-ai/mi-primera-pagina.1/blob/main/blog/tarea2_unidad1.md
 
