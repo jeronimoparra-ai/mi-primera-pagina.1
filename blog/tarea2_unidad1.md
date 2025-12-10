@@ -2,7 +2,6 @@
 
 # Desarrollo De Software 2025-2 Grupo: PREICA2502B020026
 
-<img width="757" height="658" alt="image" src="https://github.com/user-attachments/assets/61cab564-d4ef-46dc-91bf-c29397b720e0" />
 
 # Mi primer Turtle
 
