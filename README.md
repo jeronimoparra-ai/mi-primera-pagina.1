@@ -110,7 +110,10 @@ def reto5():
     escalon(3, 2)
     escalon(3, 2)
     mostrar_flecha()
+
+```
 # Resultado aproximado (escalera repetida varias veces):
+```python
 # --->      (primer escalon)
 #    |
 #    |
@@ -118,6 +121,7 @@ def reto5():
 #        |
 #        |
 # ...
+```
 # al final: mostrar_flecha() para colocar la flecha 'v' bajo la posición final
 
 
