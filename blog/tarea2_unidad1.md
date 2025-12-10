@@ -6,7 +6,6 @@
 # Mi primer Turtle
 
 
-## Reto 1: Simula el comportamiento de la tortuga usando solo print() e input()
 # Tarea 2 — Simulación de la tortuga
 
 ## Reto 1: Simula la tortuga avanzando horizontal
