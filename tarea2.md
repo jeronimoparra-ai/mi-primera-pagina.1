@@ -1,4 +1,5 @@
 # Reto 1: Simula el comportamiento de la tortuga usando solo print() e input()
+´´´ python 
 def reto1():
     print("RETO 1: Tortuga avanzando horizontal")
     pasos = int(input("Cuantos pasos quieres que avance? "))
@@ -19,7 +20,7 @@ v
      
 print ("|")
     
-print("v")
+print("v") ´´´
 
  # Reto 3: Girar y dibujar usando solo print() e input()
 
@@ -110,3 +111,4 @@ def reto5():
            |
            |
            v
+
