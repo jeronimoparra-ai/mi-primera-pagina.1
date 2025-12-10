@@ -94,8 +94,10 @@ def reto4():
 #      |
 #      v
 
+
 ```
 ## Reto 5: La tortuga baja las escalas
+
 ```python
 def escalon(horizontal, vertical):
     adelante(horizontal)
