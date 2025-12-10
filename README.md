@@ -2,119 +2,31 @@
 
 # Desarrollo De Software 2025-2 Grupo: PREICA2502B020026
 
+<img width="757" height="658" alt="image" src="https://github.com/user-attachments/assets/61cab564-d4ef-46dc-91bf-c29397b720e0" />
 
 # Mi primer Turtle
 
 
 ## Reto 1: Simula el comportamiento de la tortuga usando solo print() e input()
-def reto1():
-    print("RETO 1: Tortuga avanzando horizontal")
-    pasos = int(input("Cuantos pasos quieres que avance? "))
-    print("-" * pasos + ">")
-# Creando una tortuga simulada... que da 50 pasos.
-# -------------------------------------------------->
+<img width="525" height="155" alt="image" src="https://github.com/user-attachments/assets/6718645e-2669-4801-a9e3-d4c616417fcc" />
 
-#Reto 2: Tortuga bajando
-def reto2():   print("RETO 2: Tortuga bajando vertical")   
-pasos = (input("Cuantos pasos quieres bajar? ")) 
-¿Cuántos pasos quieres bajar? 5
-|
-|
-|
-|
-|
-v
-     
-print ("|")
-    
-print("v")
+
+
+# Reto 2: Tortuga bajando
+<img width="485" height="355" alt="image" src="https://github.com/user-attachments/assets/e1dd3496-49ba-4336-a646-9a6daf6e3d30" />
+
+
 
  # Reto 3: Girar y dibujar usando solo print() e input()
+<img width="566" height="520" alt="image" src="https://github.com/user-attachments/assets/29d0387d-b1e3-47c5-805a-941177625a58" />
 
-def reto3():
-    print("RETO 3: Forma de L")
-    pasos_horizontal = int(input("Cuantos pasos horizontales? "))
-    pasos_vertical = int(input("Cuantos pasos verticales? "))
-    
-    print("-" * pasos_horizontal + ">")
-    
-    for i in range(pasos_vertical):
-        print(" " * pasos_horizontal + "|")
-    
-    print(" " * pasos_horizontal + "v")
-    
-¿Cuántos pasos horizontales? 10
-¿Cuántos pasos verticales? 4
----------->
-          |
-          |
-          |
-          |
-          v
+
+
 # Reto 4: Encapsula los comportamientos anteriores usando funciones
-posicion_x = 0
+<img width="463" height="763" alt="image" src="https://github.com/user-attachments/assets/b099fbfe-b17a-4aff-bb3a-6e9e4bd0706d" />
 
-def adelante(n):
-    global posicion_x
-    print(" " * posicion_x + "-" * n + ">")
-    posicion_x = posicion_x + n
 
-def abajo(n):
-    global posicion_x
-    for i in range(n):
-        print(" " * posicion_x + "|")
-
-def mostrar_flecha():
-    global posicion_x
-    print(" " * posicion_x + "v")
-
-def reto4():
-    global posicion_x
-    posicion_x = 0
-    print("RETO 4: Usando funciones (ejemplo L)")
-    adelante(5)
-    abajo(3)
-    mostrar_flecha()
-Dibujando forma de L:
-
------>
-     |
-     |
-     |
-     v
-Dibujando forma personalizada:
-
--------->
-        |
-        |
-        |
-        |
-        --->
-           |
-           |
-           v
     # Reto 5: La tortuga baja las escalas
+<img width="312" height="586" alt="image" src="https://github.com/user-attachments/assets/d1738ed7-29e8-4126-825f-00d67e7a0566" />
 
-def escalon(horizontal, vertical):
-    adelante(horizontal)
-    abajo(vertical)
 
-def reto5():
-    global posicion_x
-    posicion_x = 0
-    print("RETO 5: Escaleras")
-    escalon(3, 2)
-    escalon(3, 2)
-    escalon(3, 2)
-    escalon(3, 2)
-    mostrar_flecha()
- --->
-   |
-   |
-   --->
-       |
-       |
-       --->
-           |
-           |
-           v
