@@ -10,22 +10,25 @@
 # Tarea 2 — Simulación de la tortuga
 
 ## Reto 1: Simula la tortuga avanzando horizontal
-<img width="525" height="155" alt="Captura de pantalla 2025-12-09 220045" src="https://github.com/user-attachments/assets/2e90b4d3-4ba3-474f-a0c9-bda105973804" />
+<img width="797" height="130" alt="image" src="https://github.com/user-attachments/assets/38006d19-1fdf-4b06-ab15-ad703ef7df2d" />
 
 ## Reto 2: Tortuga bajando
-<img width="529" height="329" alt="Captura de pantalla 2025-12-09 220000" src="https://github.com/user-attachments/assets/39f44877-9279-4ab6-8125-12b38dc2deb5" />
+<img width="633" height="200" alt="image" src="https://github.com/user-attachments/assets/638f934d-57cc-48d0-ae47-c623ebaaa9b1" />
 
 
  ## Reto 3: Girar y dibujar usando solo print() e input()
-<img width="566" height="520" alt="Captura de pantalla 2025-12-09 220206" src="https://github.com/user-attachments/assets/8dd7740c-1b4f-45db-be1c-abeaa8c1b1f7" />
+<img width="663" height="305" alt="image" src="https://github.com/user-attachments/assets/bdad5091-3230-4a41-827f-83815b8d3656" />
 
 
 ## Reto 4: Encapsula los comportamientos anteriores usando funciones
-<img width="464" height="764" alt="Captura de pantalla 2025-12-09 220329" src="https://github.com/user-attachments/assets/b049b3c4-d8cb-427f-90a9-2082078968a9" />
+<img width="688" height="680" alt="image" src="https://github.com/user-attachments/assets/24eff742-8e9e-4d09-8aac-8643c43c3901" />
 
 
 ## Reto 5: La tortuga baja las escalas
-<img width="300" height="610" alt="Captura de pantalla 2025-12-09 221831" src="https://github.com/user-attachments/assets/9fd9f2d6-b56b-4131-90fe-f0ac08f28073" />
+<img width="617" height="440" alt="image" src="https://github.com/user-attachments/assets/b24bcc63-8d09-457a-8aa4-93ae1a21f3e1" />
 
+
+## Menu de la tortuga
+<img width="677" height="812" alt="image" src="https://github.com/user-attachments/assets/055009d6-3ebb-4910-9b01-013fadcfd978" />
 
 
