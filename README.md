@@ -6,11 +6,10 @@
 
 # Mi primer Turtle
 
-
-## Reto 1: Simula el comportamiento de la tortuga usando solo print() e input()
 # Tarea 2 — Simulación de la tortuga
+## Reto 1: Simula el comportamiento de la tortuga usando solo print() e input()
 
-## Reto 1: Simula la tortuga avanzando horizontal
+```## Reto 1: Simula la tortuga avanzando horizontal
 ```python
 def reto1():
     print("RETO 1: Tortuga avanzando horizontal")
@@ -19,9 +18,9 @@ def reto1():
 # Ejemplo: crea una tortuga simulada... que da 50 pasos.
 # --------------------------------------------->
 
-
+```
 ## Reto 2: Tortuga bajando
-
+```python
 def reto2():
     print("RETO 2: Tortuga bajando vertical")
     pasos = int(input("Cuantos pasos quieres bajar? "))
@@ -39,8 +38,9 @@ def reto2():
 
 
 
-
+```
  ## Reto 3: Girar y dibujar usando solo print() e input()
+ ```python
 def reto3():
     print("RETO 3: Forma de L")
     pasos_horizontal = int(input("Cuantos pasos horizontales? "))
@@ -59,8 +59,9 @@ def reto3():
 #           |
 #           v
 
-
+```
 ## Reto 4: Encapsula los comportamientos anteriores usando funciones
+```python
 posicion_x = 0
 
 def adelante(n):
@@ -93,8 +94,9 @@ def reto4():
 #      |
 #      v
 
-
+```
 ## Reto 5: La tortuga baja las escalas
+```python
 def escalon(horizontal, vertical):
     adelante(horizontal)
     abajo(vertical)
