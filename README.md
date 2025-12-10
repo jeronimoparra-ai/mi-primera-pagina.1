@@ -8,25 +8,115 @@
 
 
 ## Reto 1: Simula el comportamiento de la tortuga usando solo print() e input()
-<img width="525" height="155" alt="image" src="https://github.com/user-attachments/assets/6718645e-2669-4801-a9e3-d4c616417fcc" />
+# Tarea 2 — Simulación de la tortuga
+
+## Reto 1: Simula la tortuga avanzando horizontal
+```python
+def reto1():
+    print("RETO 1: Tortuga avanzando horizontal")
+    pasos = int(input("Cuantos pasos quieres que avance? "))
+    print("-" * pasos + ">")
+# Ejemplo: crea una tortuga simulada... que da 50 pasos.
+# --------------------------------------------->
+
+
+## Reto 2: Tortuga bajando
+
+def reto2():
+    print("RETO 2: Tortuga bajando vertical")
+    pasos = int(input("Cuantos pasos quieres bajar? "))
+    for i in range(pasos):
+        print("|")
+    print("v")
+# Ejemplo de uso:
+# ¿Cuántos pasos quieres bajar? 5
+# |
+# |
+# |
+# |
+# |
+# v
 
 
 
-# Reto 2: Tortuga bajando
-<img width="485" height="355" alt="image" src="https://github.com/user-attachments/assets/e1dd3496-49ba-4336-a646-9a6daf6e3d30" />
+
+ ## Reto 3: Girar y dibujar usando solo print() e input()
+def reto3():
+    print("RETO 3: Forma de L")
+    pasos_horizontal = int(input("Cuantos pasos horizontales? "))
+    pasos_vertical = int(input("Cuantos pasos verticales? "))
+    print("-" * pasos_horizontal + ">")
+    for i in range(pasos_vertical):
+        print(" " * pasos_horizontal + "|")
+    print(" " * pasos_horizontal + "v")
+# Ejemplo:
+# ¿Cuántos pasos horizontales? 10
+# ¿Cuántos pasos verticales? 4
+#
+# ---------->        (10 guiones luego >
+#           |
+#           |
+#           |
+#           v
 
 
+## Reto 4: Encapsula los comportamientos anteriores usando funciones
+posicion_x = 0
 
- # Reto 3: Girar y dibujar usando solo print() e input()
-<img width="566" height="520" alt="image" src="https://github.com/user-attachments/assets/29d0387d-b1e3-47c5-805a-941177625a58" />
+def adelante(n):
+    global posicion_x
+    # dibuja la línea horizontal desde la posición actual
+    print(" " * posicion_x + "-" * n + ">")
+    posicion_x = posicion_x + n
+
+def abajo(n):
+    global posicion_x
+    # dibuja n líneas verticales debajo de la posición actual
+    for i in range(n):
+        print(" " * posicion_x + "|")
+
+def mostrar_flecha():
+    global posicion_x
+    print(" " * posicion_x + "v")
+
+def reto4():
+    global posicion_x
+    posicion_x = 0
+    print("RETO 4: Usando funciones (ejemplo L)")
+    adelante(5)
+    abajo(3)
+    mostrar_flecha()
+# Resultado aproximado:
+# ----->
+#      |
+#      |
+#      |
+#      v
 
 
+## Reto 5: La tortuga baja las escalas
+def escalon(horizontal, vertical):
+    adelante(horizontal)
+    abajo(vertical)
 
-# Reto 4: Encapsula los comportamientos anteriores usando funciones
-<img width="463" height="763" alt="image" src="https://github.com/user-attachments/assets/b099fbfe-b17a-4aff-bb3a-6e9e4bd0706d" />
+def reto5():
+    global posicion_x
+    posicion_x = 0
+    print("RETO 5: Escaleras")
+    escalon(3, 2)
+    escalon(3, 2)
+    escalon(3, 2)
+    escalon(3, 2)
+    mostrar_flecha()
+# Resultado aproximado (escalera repetida varias veces):
+# --->      (primer escalon)
+#    |
+#    |
+#     ---> (siguiente escalon desplazado)
+#        |
+#        |
+# ...
+# al final: mostrar_flecha() para colocar la flecha 'v' bajo la posición final
 
-
-    # Reto 5: La tortuga baja las escalas
-<img width="312" height="586" alt="image" src="https://github.com/user-attachments/assets/d1738ed7-29e8-4126-825f-00d67e7a0566" />
 
 
