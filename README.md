@@ -147,7 +147,7 @@ La simulación de la tortuga, aunque básica, ilustra cómo conceptos espaciales
 
 ``
 ## Mi progreso👇
-https://github.com/jeronimoparra-ai/mi-primera-pagina.1/blob/main/blog/tarea2_unidad1.md
+[Mi Tortuguita](https://github.com/jeronimoparra-ai/mi-primera-pagina.1/blob/main/blog/tarea2_unidad1.md)
 
 
 
