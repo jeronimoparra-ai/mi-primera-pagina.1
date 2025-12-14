@@ -169,8 +169,7 @@ La simulación de la tortuga, aunque básica, ilustra cómo conceptos espaciales
 
 
 
-<img width="1024" height="1024" alt="Gemini_Generated_Image_ytrrjbytrrjbytrr" src="https://github.com/user-attachments/assets/2a3a5015-1dad-48d8-9f43-28d6a2233a53" />
-
+<img width="1024" height="400" alt="Gemini_Generated_Image_ytrrjbytrrjbytrr" src="https://github.com/user-attachments/assets/00bbd5c5-250c-4e71-919d-5e5b50e553a4" />
 
 
 # mini_turtle_oo — Tarea 03
