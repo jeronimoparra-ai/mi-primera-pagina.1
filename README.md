@@ -154,7 +154,7 @@ La simulación de la tortuga, aunque básica, ilustra cómo conceptos espaciales
 
 **Curso:** Desarrollo de Software 2025-2  
 **Grupo:** PREICA2502B020026  
-**Autores:** Andres Parrita, Elier José (ajusta los nombres)  
+**Autor:** Andres Jeronimo Parra Bastidas
 **Fecha:** 14/12/2025
 ## 📂 Estructura del proyecto
 
