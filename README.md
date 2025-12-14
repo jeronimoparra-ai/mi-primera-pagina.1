@@ -150,6 +150,48 @@ La simulación de la tortuga, aunque básica, ilustra cómo conceptos espaciales
 [Mi Tortuguita](https://github.com/jeronimoparra-ai/mi-primera-pagina.1/blob/main/blog/tarea2_unidad1.md)
 
 
+# mini_turtle_oo — Tarea 03
+
+**Curso:** Desarrollo de Software 2025-2  
+**Grupo:** PREICA2502B020026  
+**Autores:** Andres Parrita, Elier José (ajusta los nombres)  
+**Fecha:** 14/12/2025
+## 📂 Estructura del proyecto
+
+Este repositorio contiene dos versiones del proyecto Mini Turtle:
+
+### 🔹 Versión inicial
+📁 **mini_turtle/**  
+Primera versión del proyecto, conservada como referencia del proceso de aprendizaje.
+
+👉 Enlace directo:  
+https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle
+
+---
+
+### ✅ Versión final (ENTREGA)
+📁 **mini_turtle_oo_project/**  
+Versión final del proyecto, desarrollada con Programación Orientada a Objetos.
+
+✔ Usa clases  
+✔ Encapsula los movimientos  
+✔ Cumple con los retos de la Unidad 2  
+✔ **ESTA ES LA CARPETA QUE DEBE SER EVALUADA**
+
+👉 Enlace directo:  
+https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle_oo_project
+
+---
+
+## ▶️ Ejecución
+Para ejecutar el proyecto final:
+
+```bash
+cd mini_turtle_oo_project
+python main.py
+
+
+
 
 
 
