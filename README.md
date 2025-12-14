@@ -169,14 +169,9 @@ https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle
 
 ---
 
-### ✅ Versión final (ENTREGA)
-📁 **mini_turtle_oo_project/**  
+### 📁 **mini_turtle_oo_project/**  
 Versión final del proyecto, desarrollada con Programación Orientada a Objetos.
 
-✔ Usa clases  
-✔ Encapsula los movimientos  
-✔ Cumple con los retos de la Unidad 2  
-✔ **ESTA ES LA CARPETA QUE DEBE SER EVALUADA**
 
 👉 Enlace directo:  
 https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle_oo_project
