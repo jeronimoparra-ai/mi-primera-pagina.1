@@ -164,8 +164,7 @@ Este repositorio contiene dos versiones del proyecto Mini Turtle:
 📁 **mini_turtle/**  
 Primera versión del proyecto, conservada como referencia del proceso de aprendizaje.
 
-👉 Enlace directo:  
-https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle
+👉[Enlace directo](https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle)
 
 ---
 
@@ -173,8 +172,7 @@ https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle
 Versión final del proyecto, desarrollada con Programación Orientada a Objetos.
 
 
-👉 Enlace directo:  
-https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle_oo_project
+👉[Enlace directo](https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle_oo_project)
 
 ---
 
