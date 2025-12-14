@@ -144,7 +144,6 @@ Modularización: encapsular comportamientos repetitivos en funciones reutilizabl
 Gestión de estado: utilizar variables globales para mantener el contexto del programa
 La simulación de la tortuga, aunque básica, ilustra cómo conceptos espaciales pueden traducirse efectivamente a representaciones textuales mediante el uso estratégico de strings y estructuras de control.
 
-
 ``
 ## Mi progreso👇
 [Mi Tortuguita](https://github.com/jeronimoparra-ai/mi-primera-pagina.1/blob/main/blog/tarea2_unidad1.md)
@@ -157,6 +156,13 @@ La simulación de la tortuga, aunque básica, ilustra cómo conceptos espaciales
                                                    ⬇️
                                                    ⬇️
                                                    🐢 
+
+
+
+
+
+
+
 
 
 
