@@ -77,7 +77,7 @@ if (retoButtons.length && retoPanels.length) {
     panel.classList.remove("open");
     button.classList.remove("active");
     button.setAttribute("aria-expanded", "false");
-    window.setTimeout(() => {
+    setTimeout(() => {
       if (!panel.classList.contains("open")) {
         panel.hidden = true;
       }
