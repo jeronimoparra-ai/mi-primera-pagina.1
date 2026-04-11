@@ -5,7 +5,7 @@ const yearElement = document.querySelector("#year");
 const revealElements = document.querySelectorAll(".reveal");
 const retoButtons = document.querySelectorAll(".reto-btn");
 const retoPanels = document.querySelectorAll(".reto-panel");
-const PANEL_TRANSITION_DURATION = 360;
+const PANEL_TRANSITION_DURATION = 350;
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
