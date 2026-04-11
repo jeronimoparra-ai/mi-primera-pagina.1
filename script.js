@@ -27,12 +27,16 @@ if (navToggle && navMenu) {
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && navMenu.classList.contains("is-open")) {
       closeMenu();
     }
   });
 
   document.addEventListener("click", (event) => {
+    if (!navMenu.classList.contains("is-open")) {
+      return;
+    }
+
     const target = event.target;
     if (
       target instanceof Node &&
