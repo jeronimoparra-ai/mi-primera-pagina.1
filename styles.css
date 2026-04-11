@@ -45,6 +45,15 @@ a {
   color: inherit;
 }
 
+code {
+  background: rgba(99, 179, 255, 0.15);
+  border: 1px solid rgba(99, 179, 255, 0.45);
+  border-radius: 6px;
+  padding: 0.1rem 0.4rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: #d8ecff;
+}
+
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
