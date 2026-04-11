@@ -5,7 +5,7 @@ const yearElement = document.querySelector("#year");
 const revealElements = document.querySelectorAll(".reveal");
 const retoButtons = document.querySelectorAll(".reto-btn");
 const retoPanels = document.querySelectorAll(".reto-panel");
-const parseDurationToMs = (durationValue) => {
+const parseDurationToMilliseconds = (durationValue) => {
   const value = durationValue.trim();
   if (value.endsWith("ms")) {
     return Number.parseFloat(value);
@@ -18,10 +18,10 @@ const parseDurationToMs = (durationValue) => {
   return NaN;
 };
 
-const panelTransitionToken = getComputedStyle(document.documentElement).getPropertyValue(
+const panelTransitionValue = getComputedStyle(document.documentElement).getPropertyValue(
   "--transition-panel"
 );
-const parsedPanelTransition = parseDurationToMs(panelTransitionToken);
+const parsedPanelTransition = parseDurationToMilliseconds(panelTransitionValue);
 const PANEL_TRANSITION_DURATION = Number.isFinite(parsedPanelTransition)
   ? parsedPanelTransition
   : 350;
