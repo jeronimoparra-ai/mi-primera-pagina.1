@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio académico de Andrés Jerónimo Parra Bastidas: simulación de Mini Turtle, retos y evolución del proyecto."
+    />
+    <title>Mi Primera Página | Mini Turtle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+    <header class="site-header" id="inicio">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio">🐢 Mini Turtle</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir menú de navegación"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="menu-principal" class="nav-menu">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#retos">Retos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <section class="hero container">
+        <article class="hero-content reveal">
+          <p class="pill">Desarrollo de Software 2025-2 · PREICA2502B020026</p>
+          <h1>Mi primera página, rediseñada con enfoque moderno y accesible</h1>
+          <p>
+            Soy <strong>Andrés Jerónimo Parra Bastidas</strong>. Este sitio resume
+            mi proceso construyendo una simulación de tortuga en Python, desde
+            retos básicos de movimiento hasta una versión orientada a objetos.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#retos">Ver retos</a>
+            <a class="btn btn-secondary" href="#proyectos">Ver proyectos</a>
+          </div>
+        </article>
+        <aside class="hero-card reveal" aria-label="Resumen del proyecto">
+          <h2>Resumen rápido</h2>
+          <ul>
+            <li>✅ 5 retos progresivos de Mini Turtle</li>
+            <li>✅ Versión inicial funcional</li>
+            <li>✅ Refactor a programación orientada a objetos</li>
+            <li>✅ Código y documentación en GitHub</li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+
+    <main id="contenido">
+      <section class="section container reveal" id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <article class="card">
+          <p>
+            Este proyecto fue parte de mi formación en desarrollo de software.
+            Me enfocó en pensamiento algorítmico, modularización y evolución de
+            arquitectura, manteniendo una base simple y clara para aprender.
+          </p>
+        </article>
+      </section>
+
+      <section class="section container reveal" id="retos">
+        <h2>Retos de la simulación</h2>
+        <div class="grid cards-grid">
+          <article class="card feature-card">
+            <h3>Reto 1 · Movimiento horizontal</h3>
+            <p>Primer paso: avanzar con salida textual usando `print()` e `input()`.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Reto 2 · Movimiento vertical</h3>
+            <p>Uso de bucles para representar descensos y dirección en consola.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Reto 3 · Forma en “L”</h3>
+            <p>Combinación de desplazamientos con alineación espacial.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Reto 4 · Encapsulación</h3>
+            <p>Separación de comportamientos en funciones reutilizables.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Reto 5 · Escaleras</h3>
+            <p>Composición de funciones para generar patrones más complejos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="proyectos">
+        <h2>Proyectos destacados</h2>
+        <div class="grid projects-grid">
+          <article class="card project-card">
+            <h3>mini_turtle</h3>
+            <p>Versión inicial del proyecto como referencia del proceso.</p>
+            <a
+              class="link-arrow"
+              href="https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver repositorio</a
+            >
+          </article>
+          <article class="card project-card">
+            <h3>mini_turtle_oo_project</h3>
+            <p>Versión final con enfoque de programación orientada a objetos.</p>
+            <a
+              class="link-arrow"
+              href="https://github.com/jeronimoparra-ai/mi-primera-pagina.1/tree/main/mini_turtle_oo_project"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver repositorio</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="contacto">
+        <article class="cta card">
+          <h2>¿Quieres revisar mi progreso completo?</h2>
+          <p>
+            Puedes ver el historial del proyecto y su documentación directamente
+            en GitHub.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/jeronimoparra-ai/mi-primera-pagina.1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ir al repositorio</a
+          >
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Andrés Jerónimo Parra Bastidas</p>
+        <a href="#inicio" class="link-arrow">Volver arriba</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
