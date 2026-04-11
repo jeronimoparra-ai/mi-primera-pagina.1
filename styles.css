@@ -335,7 +335,7 @@ h2 {
     display: none;
   }
 
-  .nav-menu[data-open="true"] {
+  .nav-menu.is-open {
     display: flex;
   }
 

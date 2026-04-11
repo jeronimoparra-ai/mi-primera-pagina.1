@@ -10,14 +10,14 @@ if (yearElement) {
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
-    const isOpen = navMenu.getAttribute("data-open") === "true";
-    navMenu.setAttribute("data-open", String(!isOpen));
+    const isOpen = navMenu.classList.contains("is-open");
+    navMenu.classList.toggle("is-open", !isOpen);
     navToggle.setAttribute("aria-expanded", String(!isOpen));
   });
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      navMenu.setAttribute("data-open", "false");
+      navMenu.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
     });
   });
