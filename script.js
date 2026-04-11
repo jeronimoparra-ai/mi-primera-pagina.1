@@ -10,9 +10,11 @@ if (yearElement) {
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
-    const isOpen = navMenu.classList.contains("is-open");
-    navMenu.classList.toggle("is-open", !isOpen);
-    navToggle.setAttribute("aria-expanded", String(!isOpen));
+    navMenu.classList.toggle("is-open");
+    navToggle.setAttribute(
+      "aria-expanded",
+      String(navMenu.classList.contains("is-open"))
+    );
   });
 
   navLinks.forEach((link) => {
