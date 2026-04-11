@@ -9,6 +9,11 @@ if (yearElement) {
 }
 
 if (navToggle && navMenu) {
+  const closeMenu = () => {
+    navMenu.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+  };
+
   navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("is-open");
     navToggle.setAttribute(
@@ -18,10 +23,24 @@ if (navToggle && navMenu) {
   });
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("is-open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (
+      target instanceof Node &&
+      !navMenu.contains(target) &&
+      !navToggle.contains(target)
+    ) {
+      closeMenu();
+    }
   });
 }
 
