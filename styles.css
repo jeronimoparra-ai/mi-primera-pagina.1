@@ -34,7 +34,12 @@ body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top right, var(--hero-glow) 0%, var(--bg) 45%);
+  background: radial-gradient(
+    circle at top right,
+    var(--hero-glow) 0%,
+    var(--bg) 45%,
+    var(--bg) 100%
+  );
   line-height: 1.6;
 }
 
@@ -511,9 +516,9 @@ h2 {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration: 0s !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: 0s !important;
   }
 
   .reveal {

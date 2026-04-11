@@ -5,6 +5,7 @@ const yearElement = document.querySelector("#year");
 const revealElements = document.querySelectorAll(".reveal");
 const retoButtons = document.querySelectorAll(".reto-btn");
 const retoPanels = document.querySelectorAll(".reto-panel");
+const PANEL_TRANSITION_DURATION = 360;
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
@@ -81,7 +82,7 @@ if (retoButtons.length && retoPanels.length) {
       if (!panel.classList.contains("open")) {
         panel.hidden = true;
       }
-    }, 360);
+    }, PANEL_TRANSITION_DURATION);
   };
 
   const openPanel = (button, panel) => {
