@@ -5,7 +5,26 @@ const yearElement = document.querySelector("#year");
 const revealElements = document.querySelectorAll(".reveal");
 const retoButtons = document.querySelectorAll(".reto-btn");
 const retoPanels = document.querySelectorAll(".reto-panel");
-const PANEL_TRANSITION_DURATION = 350;
+const parseDurationToMs = (durationValue) => {
+  const value = durationValue.trim();
+  if (value.endsWith("ms")) {
+    return Number.parseFloat(value);
+  }
+
+  if (value.endsWith("s")) {
+    return Number.parseFloat(value) * 1000;
+  }
+
+  return NaN;
+};
+
+const panelTransitionToken = getComputedStyle(document.documentElement).getPropertyValue(
+  "--transition-panel"
+);
+const parsedPanelTransition = parseDurationToMs(panelTransitionToken);
+const PANEL_TRANSITION_DURATION = Number.isFinite(parsedPanelTransition)
+  ? parsedPanelTransition
+  : 350;
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
