@@ -3,6 +3,8 @@ const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const yearElement = document.querySelector("#year");
 const revealElements = document.querySelectorAll(".reveal");
+const retoButtons = document.querySelectorAll(".reto-btn");
+const retoPanels = document.querySelectorAll(".reto-panel");
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
@@ -66,4 +68,74 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach((element) => observer.observe(element));
 } else {
   revealElements.forEach(showElement);
+}
+
+if (retoButtons.length && retoPanels.length) {
+  let activePanelId = null;
+
+  const closePanel = (button, panel) => {
+    panel.classList.remove("open");
+    button.classList.remove("active");
+    button.setAttribute("aria-expanded", "false");
+    window.setTimeout(() => {
+      if (!panel.classList.contains("open")) {
+        panel.hidden = true;
+      }
+    }, 360);
+  };
+
+  const openPanel = (button, panel) => {
+    panel.hidden = false;
+    requestAnimationFrame(() => panel.classList.add("open"));
+    button.classList.add("active");
+    button.setAttribute("aria-expanded", "true");
+    activePanelId = panel.id;
+  };
+
+  const getButtonByPanelId = (panelId) =>
+    Array.from(retoButtons).find(
+      (button) => button.getAttribute("data-target") === panelId
+    );
+
+  const toggleChallenge = (button) => {
+    const targetId = button.getAttribute("data-target");
+    const panel = document.getElementById(targetId);
+    if (!targetId || !panel) {
+      return;
+    }
+
+    if (activePanelId === targetId) {
+      closePanel(button, panel);
+      activePanelId = null;
+      return;
+    }
+
+    if (activePanelId) {
+      const previousPanel = document.getElementById(activePanelId);
+      const previousButton = getButtonByPanelId(activePanelId);
+      if (previousPanel && previousButton) {
+        closePanel(previousButton, previousPanel);
+      }
+    }
+
+    openPanel(button, panel);
+  };
+
+  retoButtons.forEach((button, index, buttons) => {
+    button.addEventListener("click", () => toggleChallenge(button));
+
+    button.addEventListener("keydown", (event) => {
+      const isNext = event.key === "ArrowRight" || event.key === "ArrowDown";
+      const isPrevious = event.key === "ArrowLeft" || event.key === "ArrowUp";
+
+      if (!isNext && !isPrevious) {
+        return;
+      }
+
+      event.preventDefault();
+      const offset = isNext ? 1 : -1;
+      const nextIndex = (index + offset + buttons.length) % buttons.length;
+      buttons[nextIndex].focus();
+    });
+  });
 }

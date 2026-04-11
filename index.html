@@ -76,30 +76,119 @@
 
       <section class="section container reveal" id="retos">
         <h2>Retos de la simulación</h2>
-        <div class="grid cards-grid">
-          <article class="card feature-card">
-            <h3>Reto 1 · Movimiento horizontal</h3>
-            <p>
-              Primer paso: avanzar con salida textual usando
-              <code>print()</code> e <code>input()</code>.
-            </p>
-          </article>
-          <article class="card feature-card">
-            <h3>Reto 2 · Movimiento vertical</h3>
-            <p>Uso de bucles para representar descensos y dirección en consola.</p>
-          </article>
-          <article class="card feature-card">
-            <h3>Reto 3 · Forma en “L”</h3>
-            <p>Combinación de desplazamientos con alineación espacial.</p>
-          </article>
-          <article class="card feature-card">
-            <h3>Reto 4 · Encapsulación</h3>
-            <p>Separación de comportamientos en funciones reutilizables.</p>
-          </article>
-          <article class="card feature-card">
-            <h3>Reto 5 · Escaleras</h3>
-            <p>Composición de funciones para generar patrones más complejos.</p>
-          </article>
+        <div class="retos-module card" aria-label="Módulo interactivo de retos">
+          <div class="retos-controls" role="group" aria-label="Seleccionar reto">
+            <button
+              class="reto-btn"
+              type="button"
+              data-target="panel-reto-1"
+              aria-expanded="false"
+              aria-controls="panel-reto-1"
+            >
+              <span class="reto-btn-index">01</span>
+              <span class="reto-btn-label">Reto 1 · Movimiento horizontal</span>
+              <span class="reto-btn-icon" aria-hidden="true">▸</span>
+            </button>
+            <button
+              class="reto-btn"
+              type="button"
+              data-target="panel-reto-2"
+              aria-expanded="false"
+              aria-controls="panel-reto-2"
+            >
+              <span class="reto-btn-index">02</span>
+              <span class="reto-btn-label">Reto 2 · Movimiento vertical</span>
+              <span class="reto-btn-icon" aria-hidden="true">▸</span>
+            </button>
+            <button
+              class="reto-btn"
+              type="button"
+              data-target="panel-reto-3"
+              aria-expanded="false"
+              aria-controls="panel-reto-3"
+            >
+              <span class="reto-btn-index">03</span>
+              <span class="reto-btn-label">Reto 3 · Forma en “L”</span>
+              <span class="reto-btn-icon" aria-hidden="true">▸</span>
+            </button>
+            <button
+              class="reto-btn"
+              type="button"
+              data-target="panel-reto-4"
+              aria-expanded="false"
+              aria-controls="panel-reto-4"
+            >
+              <span class="reto-btn-index">04</span>
+              <span class="reto-btn-label">Reto 4 · Encapsulación</span>
+              <span class="reto-btn-icon" aria-hidden="true">▸</span>
+            </button>
+            <button
+              class="reto-btn"
+              type="button"
+              data-target="panel-reto-5"
+              aria-expanded="false"
+              aria-controls="panel-reto-5"
+            >
+              <span class="reto-btn-index">05</span>
+              <span class="reto-btn-label">Reto 5 · Escaleras</span>
+              <span class="reto-btn-icon" aria-hidden="true">▸</span>
+            </button>
+          </div>
+
+          <div class="retos-panels">
+            <article class="reto-panel" id="panel-reto-1" hidden>
+              <div class="reto-panel-inner">
+                <header class="reto-panel-header">
+                  <p class="terminal-label">Ejecutando · Reto 1</p>
+                  <h3>Movimiento horizontal</h3>
+                </header>
+                <p>
+                  Primer paso: avanzar con salida textual usando
+                  <code>print()</code> e <code>input()</code>.
+                </p>
+              </div>
+            </article>
+
+            <article class="reto-panel" id="panel-reto-2" hidden>
+              <div class="reto-panel-inner">
+                <header class="reto-panel-header">
+                  <p class="terminal-label">Ejecutando · Reto 2</p>
+                  <h3>Movimiento vertical</h3>
+                </header>
+                <p>Uso de bucles para representar descensos y dirección en consola.</p>
+              </div>
+            </article>
+
+            <article class="reto-panel" id="panel-reto-3" hidden>
+              <div class="reto-panel-inner">
+                <header class="reto-panel-header">
+                  <p class="terminal-label">Ejecutando · Reto 3</p>
+                  <h3>Forma en “L”</h3>
+                </header>
+                <p>Combinación de desplazamientos con alineación espacial.</p>
+              </div>
+            </article>
+
+            <article class="reto-panel" id="panel-reto-4" hidden>
+              <div class="reto-panel-inner">
+                <header class="reto-panel-header">
+                  <p class="terminal-label">Ejecutando · Reto 4</p>
+                  <h3>Encapsulación</h3>
+                </header>
+                <p>Separación de comportamientos en funciones reutilizables.</p>
+              </div>
+            </article>
+
+            <article class="reto-panel" id="panel-reto-5" hidden>
+              <div class="reto-panel-inner">
+                <header class="reto-panel-header">
+                  <p class="terminal-label">Ejecutando · Reto 5</p>
+                  <h3>Escaleras</h3>
+                </header>
+                <p>Composición de funciones para generar patrones más complejos.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
